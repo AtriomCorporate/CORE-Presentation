@@ -219,6 +219,23 @@
         align-content: stretch;
       }
 
+      .advantage-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: var(--gap);
+        min-height: 0;
+        flex: 1 1 auto;
+        align-content: stretch;
+      }
+
+      .advantage-grid .detail-card .display {
+        font-size: clamp(1rem, 0.9rem + 0.35vw, 1.25rem) !important;
+      }
+
+      .advantage-grid .detail-card p.text-ink-muted {
+        font-size: clamp(0.78rem, 0.72rem + 0.2vw, 0.9rem) !important;
+      }
+
       .detail-card {
         display: flex;
         flex-direction: column;
@@ -903,6 +920,9 @@
         .detail-grid {
           grid-template-columns: 1fr;
         }
+        .advantage-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
         .vs {
           grid-template-columns: 1fr;
         }
@@ -1375,7 +1395,7 @@
         <div class="wm wm-br" aria-hidden="true"></div>
         <div class="max-w-6xl mx-auto w-full slide-board">
           <div class="header-block reveal">
-            <p class="eyebrow">Parceria · 1 de 2</p>
+            <p class="eyebrow">Parceria · 1 de 3</p>
             <h2 class="reveal-d1">O que o parceiro traz</h2>
             <p class="lead reveal-d2">
               Sem ideia registrada e esforço comprovável, não há participação.
@@ -1426,7 +1446,7 @@
             </div>
           </div>
           <p class="note reveal reveal-d4">
-            Fora: salário, equity da Atriom e split técnico sem ideia registrada.
+            Não contemplado: salário, equity da Atriom e split técnico sem ideia registrada.
             Co-autores dividem o % via aditivo.
           </p>
         </div>
@@ -1437,7 +1457,7 @@
         <div class="wm wm-bl" aria-hidden="true"></div>
         <div class="max-w-6xl mx-auto w-full slide-board">
           <div class="header-block reveal">
-            <p class="eyebrow">Parceria · 2 de 2</p>
+            <p class="eyebrow">Parceria · 2 de 3</p>
             <h2 class="reveal-d1">O que a Atriom traz</h2>
             <p class="lead reveal-d2">
               A empresa retém o IP e a operação — e devolve ao parceiro o direito
@@ -1477,18 +1497,119 @@
             </div>
             <div class="tile detail-card">
               <div class="icon">
-                <svg viewBox="0 0 24 24"><path d="M12 3l7 4v5c0 4-3 7-7 9-4-2-7-5-7-9V7l7-4z"/><path d="M9 12l2 2 4-4"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M8 4h8v4H8zM6 8h12v12H6zM10 12h4M10 16h4"/></svg>
               </div>
-              <p class="display text-rose-200">Teto e caixa</p>
+              <p class="display text-rose-200">Time jurídico</p>
               <p class="text-ink-muted">
-                Parceiro no máximo 50% do lucro do app. Atriom retém ≥ 50% para
-                custos, time e reinvestimento.
+                Contratos, IP, lojas e o instrumento de participação. O parceiro
+                entra no produto sem montar banca própria.
               </p>
             </div>
           </div>
           <p class="note reveal reveal-d4">
-            Você traz a ideia e o esforço; a Atriom traz a máquina, o IP e o
-            pagamento sobre o lucro real do produto.
+            Você traz a ideia e o esforço; a Atriom traz a máquina, o IP, o
+            jurídico e o pagamento sobre o lucro real do produto.
+          </p>
+        </div>
+      </section>
+
+      <!-- 7c Vantagens -->
+      <section class="slide" data-title="Vantagens">
+        <div class="wm wm-tr" aria-hidden="true"></div>
+        <div class="max-w-6xl mx-auto w-full slide-board">
+          <div class="header-block reveal">
+            <p class="eyebrow">Parceria · 3 de 3</p>
+            <h2 class="reveal-d1">Por que trabalhar conosco</h2>
+            <p class="lead reveal-d2">
+              Além do % sobre o lucro, o parceiro entra numa máquina já pronta:
+              marca, loja, time e um jeito mais humano de construir.
+            </p>
+          </div>
+          <div class="advantage-grid reveal reveal-d3">
+            <div class="tile tile-glow detail-card">
+              <div class="icon">
+                <svg viewBox="0 0 24 24"><path d="M12 3l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1 3-6z"/></svg>
+              </div>
+              <p class="display text-rose-200">Marca premium</p>
+              <p class="text-ink-muted">
+                Publicar sob a Atriom: reputação, domínio e posicionamento
+                enterprise já construídos.
+              </p>
+            </div>
+            <div class="tile detail-card">
+              <div class="icon">
+                <svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h8M8 11h8M8 15h5"/></svg>
+              </div>
+              <p class="display text-rose-200">Loja</p>
+              <p class="text-ink-muted">
+                Contas, publicação e manutenção em iOS, Android e web — operação
+                da empresa, não do parceiro.
+              </p>
+            </div>
+            <div class="tile detail-card">
+              <div class="icon">
+                <svg viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg>
+              </div>
+              <p class="display text-rose-200">App com qualidade</p>
+              <p class="text-ink-muted">
+                Store-ready no padrão Atriom: UX, performance e operação — não
+                um protótipo solto.
+              </p>
+            </div>
+            <div class="tile detail-card">
+              <div class="icon">
+                <svg viewBox="0 0 24 24"><circle cx="8" cy="8" r="2.5"/><circle cx="16" cy="8" r="2.5"/><path d="M3 18c1-3 3.5-4.5 5-4.5S12 15 13 18M11 18c1-3 3.5-4.5 5-4.5S21 15 22 18"/></svg>
+              </div>
+              <p class="display text-rose-200">Time Atriom</p>
+              <p class="text-ink-muted">
+                Engenharia, produto e DevOps no mesmo método. Você não monta
+                squad do zero.
+              </p>
+            </div>
+            <div class="tile detail-card">
+              <div class="icon">
+                <svg viewBox="0 0 24 24"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg>
+              </div>
+              <p class="display text-rose-200">Revisão de código</p>
+              <p class="text-ink-muted">
+                Nenhum merge sem revisão: qualidade, segurança e um padrão único
+                no repo.
+              </p>
+            </div>
+            <div class="tile detail-card">
+              <div class="icon">
+                <svg viewBox="0 0 24 24"><path d="M4 18V6M4 18h16M8 14V9M12 14V7M16 14v-3"/></svg>
+              </div>
+              <p class="display text-rose-200">Crescimento conjunto</p>
+              <p class="text-ink-muted">
+                O app cresce com o portfólio. O sucesso do produto é o sucesso
+                do parceiro.
+              </p>
+            </div>
+            <div class="tile detail-card">
+              <div class="icon">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+              </div>
+              <p class="display text-rose-200">Qualidade de vida</p>
+              <p class="text-ink-muted">
+                Foco na ideia e no esforço que conta. Infra, loja, jurídico e
+                operação ficam com a Atriom.
+              </p>
+            </div>
+            <div class="tile detail-card">
+              <div class="icon">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3"/><path d="M5 20c1.5-4 4-6 7-6s5.5 2 7 6"/></svg>
+              </div>
+              <p class="display text-rose-200">Futuro mais humano</p>
+              <p class="text-ink-muted">
+                Objetivo da Atriom: desenvolvimento com pessoas no centro —
+                ritmo sustentável, sem queimar o time.
+              </p>
+            </div>
+          </div>
+          <p class="note reveal reveal-d4">
+            A parceria não é só o %. É entrar na máquina com marca, loja, time
+            e um jeito de construir que dura.
           </p>
         </div>
       </section>
@@ -1510,8 +1631,6 @@
             <span>Receita</span>
             <span class="op">−</span>
             <span>Custos</span>
-            <span class="op">−</span>
-            <span>Rateio</span>
           </div>
           <div class="info-grid reveal reveal-d3">
             <div class="tile">
